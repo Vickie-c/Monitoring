@@ -1,0 +1,2 @@
+-A INPUT -p tcp -m multiport --dports 3000 -m comment --comment grafana -m state --state NEW -j ACCEPT
+-A INPUT -p tcp -m multiport --dports 8083,8086 -m comment --comment influxdb -m state --state NEW -j ACCEPT
