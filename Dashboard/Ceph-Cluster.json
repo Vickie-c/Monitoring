@@ -1,8 +1,8 @@
 {
   "__inputs": [
     {
-      "name": "DS_DB",
-      "label": "db",
+      "name": "DS_CLUTELE",
+      "label": "clutele",
       "description": "",
       "type": "datasource",
       "pluginId": "influxdb",
@@ -20,7 +20,7 @@
       "type": "grafana",
       "id": "grafana",
       "name": "Grafana",
-      "version": "4.4.1"
+      "version": "4.6.3"
     },
     {
       "type": "panel",
@@ -42,19 +42,29 @@
     }
   ],
   "annotations": {
-    "list": []
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
   },
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
+  "hideControls": true,
   "id": null,
   "links": [],
-  "refresh": "30s",
+  "refresh": "5s",
   "rows": [
     {
       "collapse": false,
-      "height": "135",
+      "height": 158,
       "panels": [
         {
           "cacheTimeout": null,
@@ -65,7 +75,7 @@
             "rgba(243, 182, 30, 0.89)",
             "rgba(174, 232, 50, 0.97)"
           ],
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -171,7 +181,7 @@
             "rgba(237, 129, 40, 0.89)",
             "rgba(50, 172, 45, 0.97)"
           ],
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -277,7 +287,7 @@
             "rgba(243, 182, 30, 0.89)",
             "rgba(174, 232, 50, 0.97)"
           ],
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -382,7 +392,7 @@
             "rgba(243, 182, 30, 0.89)",
             "rgba(4, 110, 5, 0.97)"
           ],
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "format": "short",
           "gauge": {
             "maxValue": 100,
@@ -488,7 +498,7 @@
             "rgba(238, 159, 10, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "format": "percentunit",
           "gauge": {
             "maxValue": 100,
@@ -497,7 +507,7 @@
             "thresholdLabels": false,
             "thresholdMarkers": true
           },
-          "height": "135px",
+          "height": "",
           "id": 7,
           "interval": null,
           "links": [],
@@ -577,6 +587,7 @@
           ],
           "thresholds": "65,80",
           "title": "Available Capacity",
+          "transparent": false,
           "type": "singlestat",
           "valueFontSize": "80%",
           "valueMaps": [
@@ -597,7 +608,7 @@
             "rgba(243, 182, 30, 0.89)",
             "rgba(174, 232, 50, 0.97)"
           ],
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "format": "bytes",
           "gauge": {
             "maxValue": 100,
@@ -703,7 +714,7 @@
             "rgba(243, 182, 30, 0.89)",
             "rgba(174, 232, 50, 0.97)"
           ],
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "format": "bytes",
           "gauge": {
             "maxValue": 100,
@@ -807,11 +818,11 @@
       "repeatRowId": null,
       "showTitle": true,
       "title": "CEPH luster Status1",
-      "titleSize": "h6"
+      "titleSize": "h5"
     },
     {
       "collapse": false,
-      "height": "135",
+      "height": "150",
       "panels": [
         {
           "cacheTimeout": null,
@@ -822,7 +833,7 @@
             "rgba(243, 182, 30, 0.89)",
             "rgba(174, 232, 50, 0.97)"
           ],
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -928,7 +939,7 @@
             "rgba(237, 129, 40, 0.89)",
             "rgba(50, 172, 45, 0.97)"
           ],
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -1033,7 +1044,7 @@
             "rgba(243, 182, 30, 0.89)",
             "rgba(174, 232, 50, 0.97)"
           ],
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -1138,7 +1149,7 @@
             "rgba(243, 182, 30, 0.89)",
             "rgba(4, 110, 5, 0.97)"
           ],
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -1243,7 +1254,7 @@
             "rgba(236, 53, 8, 0.89)",
             "rgba(236, 53, 8, 0.89)"
           ],
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -1350,7 +1361,7 @@
             "rgba(243, 182, 30, 0.89)",
             "rgba(4, 110, 5, 0.97)"
           ],
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -1455,7 +1466,7 @@
             "rgba(243, 182, 30, 0.89)",
             "rgba(4, 110, 5, 0.97)"
           ],
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -1571,7 +1582,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "fill": 1,
           "id": 14,
           "legend": {
@@ -1592,7 +1603,7 @@
           "nullPointMode": "connected",
           "percentage": false,
           "pointradius": 5,
-          "points": false,
+          "points": true,
           "renderer": "flot",
           "seriesOverrides": [],
           "spaceLength": 10,
@@ -1700,7 +1711,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "fill": 1,
           "id": 21,
           "legend": {
@@ -1720,7 +1731,7 @@
           "nullPointMode": "connected",
           "percentage": false,
           "pointradius": 5,
-          "points": false,
+          "points": true,
           "renderer": "flot",
           "seriesOverrides": [],
           "spaceLength": 10,
@@ -1754,6 +1765,8 @@
               "measurement": "ceph_pool_stats",
               "orderByTime": "ASC",
               "policy": "default",
+              "query": "SELECT percentile(\"read_op_per_sec\", 95) AS \"read\", percentile(\"write_op_per_sec\", 95) AS \"write\" FROM \"ceph_pool_stats\" WHERE $timeFilter GROUP BY time($interval), \"name\" fill(none)",
+              "rawQuery": false,
               "refId": "A",
               "resultFormat": "time_series",
               "select": [
@@ -1843,7 +1856,7 @@
       "repeatRowId": null,
       "showTitle": true,
       "title": "Through put / IOPS by pool",
-      "titleSize": "h6"
+      "titleSize": "h5"
     },
     {
       "collapse": false,
@@ -1854,7 +1867,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "fill": 1,
           "id": 23,
           "legend": {
@@ -1978,7 +1991,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "fill": 1,
           "id": 24,
           "legend": {
@@ -2103,7 +2116,7 @@
       "repeatRowId": null,
       "showTitle": true,
       "title": "OSD latency",
-      "titleSize": "h6"
+      "titleSize": "h5"
     },
     {
       "collapse": false,
@@ -2115,7 +2128,7 @@
               {
                 "evaluator": {
                   "params": [
-                    94117647059
+                    117441869336505
                   ],
                   "type": "gt"
                 },
@@ -2186,7 +2199,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "decimals": 3,
           "fill": 1,
           "height": "",
@@ -2237,7 +2250,7 @@
               "orderByTime": "ASC",
               "policy": "default",
               "query": "SELECT last(\"total_bytes\") FROM \"ceph_usage\" WHERE $timeFilter GROUP BY time($interval) fill(linear)",
-              "rawQuery": true,
+              "rawQuery": false,
               "refId": "A",
               "resultFormat": "time_series",
               "select": [
@@ -2339,7 +2352,7 @@
               "fill": true,
               "line": true,
               "op": "gt",
-              "value": 94117647059
+              "value": 117441869336505
             }
           ],
           "timeFrom": null,
@@ -2395,7 +2408,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "decimals": null,
           "fill": 1,
           "id": 20,
@@ -2494,8 +2507,8 @@
       "repeatIteration": null,
       "repeatRowId": null,
       "showTitle": true,
-      "title": "Dashboard Row",
-      "titleSize": "h6"
+      "title": "Capacity",
+      "titleSize": "h5"
     },
     {
       "collapse": false,
@@ -2506,7 +2519,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "fill": 1,
           "id": 17,
           "legend": {
@@ -2527,7 +2540,7 @@
           "nullPointMode": "connected",
           "percentage": false,
           "pointradius": 5,
-          "points": false,
+          "points": true,
           "renderer": "flot",
           "seriesOverrides": [],
           "spaceLength": 10,
@@ -2606,8 +2619,8 @@
       "repeatIteration": null,
       "repeatRowId": null,
       "showTitle": true,
-      "title": "Dashboard Row",
-      "titleSize": "h6"
+      "title": "Objects",
+      "titleSize": "h5"
     },
     {
       "collapse": false,
@@ -2618,7 +2631,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_DB}",
+          "datasource": "${DS_CLUTELE}",
           "fill": 1,
           "id": 16,
           "legend": {
@@ -2629,6 +2642,7 @@
             "min": false,
             "rightSide": true,
             "show": true,
+            "sideWidth": 500,
             "total": false,
             "values": true
           },
@@ -2642,7 +2656,7 @@
           "renderer": "flot",
           "seriesOverrides": [],
           "spaceLength": 10,
-          "span": 6,
+          "span": 12,
           "stack": false,
           "steppedLine": false,
           "targets": [
@@ -2834,186 +2848,19 @@
               "show": true
             }
           ]
-        },
-        {
-          "cacheTimeout": null,
-          "colorBackground": false,
-          "colorValue": true,
-          "colors": [
-            "rgba(245, 54, 54, 0.9)",
-            "rgba(237, 129, 40, 0.89)",
-            "rgba(50, 172, 45, 0.97)"
-          ],
-          "datasource": "${DS_DB}",
-          "format": "percentunit",
-          "gauge": {
-            "maxValue": 1,
-            "minValue": 0,
-            "show": true,
-            "thresholdLabels": false,
-            "thresholdMarkers": true
-          },
-          "id": 25,
-          "interval": null,
-          "links": [],
-          "mappingType": 1,
-          "mappingTypes": [
-            {
-              "name": "value to text",
-              "value": 1
-            },
-            {
-              "name": "range to text",
-              "value": 2
-            }
-          ],
-          "maxDataPoints": 100,
-          "nullPointMode": "connected",
-          "nullText": null,
-          "postfix": "",
-          "postfixFontSize": "50%",
-          "prefix": "",
-          "prefixFontSize": "50%",
-          "rangeMaps": [
-            {
-              "from": "null",
-              "text": "N/A",
-              "to": "null"
-            }
-          ],
-          "span": 3,
-          "sparkline": {
-            "fillColor": "rgba(31, 118, 189, 0.18)",
-            "full": false,
-            "lineColor": "rgb(31, 120, 193)",
-            "show": false
-          },
-          "tableColumn": "",
-          "targets": [
-            {
-              "dsType": "influxdb",
-              "groupBy": [],
-              "measurement": "ceph_pgmap",
-              "orderByTime": "ASC",
-              "policy": "default",
-              "refId": "A",
-              "resultFormat": "time_series",
-              "select": [
-                [
-                  {
-                    "params": [
-                      "degraded_ratio"
-                    ],
-                    "type": "field"
-                  }
-                ]
-              ],
-              "tags": []
-            }
-          ],
-          "thresholds": "0.01,0.25",
-          "title": "Degraded Objects",
-          "type": "singlestat",
-          "valueFontSize": "80%",
-          "valueMaps": [
-            {
-              "op": "=",
-              "text": "N/A",
-              "value": "null"
-            }
-          ],
-          "valueName": "current"
-        },
-        {
-          "cacheTimeout": null,
-          "colorBackground": false,
-          "colorValue": true,
-          "colors": [
-            "rgba(245, 54, 54, 0.9)",
-            "rgba(237, 129, 40, 0.89)",
-            "rgba(50, 172, 45, 0.97)"
-          ],
-          "datasource": "${DS_DB}",
-          "format": "percentunit",
-          "gauge": {
-            "maxValue": 1,
-            "minValue": 0,
-            "show": true,
-            "thresholdLabels": false,
-            "thresholdMarkers": true
-          },
-          "id": 26,
-          "interval": null,
-          "links": [],
-          "mappingType": 1,
-          "mappingTypes": [
-            {
-              "name": "value to text",
-              "value": 1
-            },
-            {
-              "name": "range to text",
-              "value": 2
-            }
-          ],
-          "maxDataPoints": 100,
-          "nullPointMode": "connected",
-          "nullText": null,
-          "postfix": "",
-          "postfixFontSize": "50%",
-          "prefix": "",
-          "prefixFontSize": "50%",
-          "rangeMaps": [
-            {
-              "from": "null",
-              "text": "N/A",
-              "to": "null"
-            }
-          ],
-          "span": 3,
-          "sparkline": {
-            "fillColor": "rgba(31, 118, 189, 0.18)",
-            "full": false,
-            "lineColor": "rgb(31, 120, 193)",
-            "show": false
-          },
-          "tableColumn": "",
-          "targets": [
-            {
-              "dsType": "influxdb",
-              "groupBy": [],
-              "measurement": "ceph_pgmap",
-              "orderByTime": "ASC",
-              "policy": "default",
-              "refId": "A",
-              "resultFormat": "time_series",
-              "select": [
-                [
-                  {
-                    "params": [
-                      "misplaced_ratio"
-                    ],
-                    "type": "field"
-                  }
-                ]
-              ],
-              "tags": []
-            }
-          ],
-          "thresholds": "0.01,0.25",
-          "title": "Misplaced Objects",
-          "type": "singlestat",
-          "valueFontSize": "80%",
-          "valueMaps": [
-            {
-              "op": "=",
-              "text": "N/A",
-              "value": "null"
-            }
-          ],
-          "valueName": "current"
         }
       ],
+      "repeat": null,
+      "repeatIteration": null,
+      "repeatRowId": null,
+      "showTitle": false,
+      "title": "Dashboard Row",
+      "titleSize": "h6"
+    },
+    {
+      "collapse": false,
+      "height": 250,
+      "panels": [],
       "repeat": null,
       "repeatIteration": null,
       "repeatRowId": null,
@@ -3032,7 +2879,7 @@
     "list": []
   },
   "time": {
-    "from": "2017-08-09T09:41:29.631Z",
+    "from": "now-15m",
     "to": "now"
   },
   "timepicker": {
@@ -3061,6 +2908,6 @@
     ]
   },
   "timezone": "browser",
-  "title": "Ceph Cluster",
-  "version": 25
+  "title": "CEPH Cluster",
+  "version": 5
 }
